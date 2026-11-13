@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAPO — Say it letter by letter</title>
+<link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+<header><a class="logo" href="./" aria-label="MAPO home"><span class="mark">m.</span> MAPO<span class="label">ALPHABET LAB</span></a><a href="https://github.com/mapoware/mapo-alphabet" target="_blank" rel="noopener">Original project ↗</a></header>
+<main>
+<div class="eyebrow"><span></span> A LITTLE EXPERIMENT IN BEING UNDERSTOOD</div>
+<h1>Say it.<br><em>Letter by letter.</em></h1>
+<p class="intro">Turn names, codes, and everyday words into a phonetic alphabet. Meet the familiar NATO standard—and MAPO’s experimental alternatives.</p>
+<section class="workspace" aria-label="Phonetic alphabet converter">
+<div class="settings"><label for="alphabet">YOUR ALPHABET</label><select id="alphabet"><option value="mapo">MAPO · Best recognized</option><option value="nato">NATO · The classic</option><option value="worst">MAPO · Most confusing</option></select><span class="live"><span></span> Instant conversion</span></div>
+<div class="panels"><section class="panel input"><div class="panel-heading"><label for="text">01 / YOUR TEXT</label><button id="clear" class="text-button">Clear</button></div><textarea id="text" maxlength="2000" placeholder="Type a name, word, or code…" spellcheck="false">Hello world</textarea><div class="input-bottom"><span id="count">11 / 2,000</span><button id="example" class="text-button">Try an example ↗</button></div></section>
+<section class="panel output"><div class="panel-heading"><h2>02 / SAY IT LIKE THIS</h2><span id="letter-count"></span></div><div id="result" aria-live="polite" aria-atomic="true"></div><div class="output-actions"><button id="speak">▶ Listen</button><button id="copy" class="secondary">Copy output</button><button id="download" class="text-button" aria-label="Download output as text">Download ↓</button></div></section></div>
+<div class="note" id="alphabet-note"></div>
+</section>
+<p class="status" id="status" role="status"></p>
+<section class="reference"><div class="reference-title"><div><div class="eyebrow">THE WHOLE PICTURE</div><h2>Your A to Z.</h2></div><span id="reference-label"></span></div><div id="alphabet-grid"></div></section>
+<details><summary>What is the MAPO alphabet?</summary><p>Original coder <a href="https://github.com/mapoware">mapo / mapoware</a> trained a speech recognition model to explore alternatives to the NATO spelling alphabet. This app uses the best-recognized and most-confusing word lists saved in the project’s <a href="https://github.com/mapoware/mapo-alphabet/blob/main/analysis.ipynb">analysis notebook</a>. These are experimental results from one training run and may differ from the video. The app converts text using those saved lists; it does not run or retrain the model.</p><p>Spaces separate word groups. Numbers and punctuation are kept as typed. Speech uses your browser’s available English voice; support and pronunciation vary.</p></details>
+</main>
+<footer><div><strong>MAPO</strong> <span>A different way to spell it out.</span></div><p>Original code & research © 2026 <a href="https://github.com/mapoware">mapo (mapoware)</a> · <a href="https://github.com/mapoware/mapo-alphabet/blob/main/LICENSE">MIT License</a><br>Web interface adapted from the original project.</p></footer>
+</body></html>
